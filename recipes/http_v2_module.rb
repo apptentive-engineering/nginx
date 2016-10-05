@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: nginx
-# Recipe:: http_spdy_module
+# Recipe:: http_v2_module
 #
 # Author:: Christoph Buente (<christoph@meinekleinefarm.org>)
 #
@@ -20,4 +20,4 @@
 #
 
 node.run_state['nginx_configure_flags'] =
-  node.run_state['nginx_configure_flags'] | ['--with-http_spdy_module']
+  node.run_state['nginx_configure_flags'] | ['--with-http_v2_module']
